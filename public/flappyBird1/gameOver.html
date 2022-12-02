@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game over</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {background-image: url(f1.png);
+        }
+        h1{
+            display:flex;
+            justify-content: center;
+            color:rgb(255, 13, 0);
+            padding-top: 20%;
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+           font: size 800%;
+           animation: glow 1s ease-in-out infinite alternate;
+           
+        }
+        .button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  display:inline-block;
+  margin-left: 20px;
+  
+}
+
+.button:hover {background-color: #e2df18}
+
+.button:active {
+  background-color: #b7dc22;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.center {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-block-start: 20px;
+  
+  
+}
+.btn{ padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-right: 16px;
+  
+
+}
+.btn:hover {background-color: #cc4b61}
+
+.btn:active {
+  background-color: #b7dc22;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    </style>
+</head>
+<body><div class="w3-animate-zoom">
+    <h1>You Lost the game</h1>
+</div>
+<div class="center">
+    <button class="button" onclick="location.href='index.html'">Start Again</button>
+    
+    <button class="btn" onclick="location.href='GameSelectionPage.hbs'">Go Back</button>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Dancing+Script" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <header>
+        <img src="css/Bird.png" alt="Image not found" />
+        <h1 >FLAPPY BIRD GAME</h1>
+        <h3>Admin Panel</h3>
+    </header>
+    <div class="topnav">
+  <a  href="index.hbs" class="btn">Home</a>
+   <a class="active"   class="btn" >Registered users</a>
+ 
+   <a href="Admin.hbs" class="btn">Logout</a>
+ 
+</div>
+    <table class="table table-dark" >
+        <thread>
+        <tr>
+        <th scope="col">Id </th>
+        <th scope="col">First Name </th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        </tr>
+       
+        <tbody>
+
+                        {{#each Register}}
+                        <tr >
+                            <td>{{this._id}}</td>
+                            <td>{{this.firstname}}</td>
+                            <td>{{this.lastname}}</td>
+                            <td>{{this.email}}</td>
+                        </tr>
+             
+            {{/each}}
+            </tbody> 
+         </thread>
+        
+    </table>
+</body>
+</html>
